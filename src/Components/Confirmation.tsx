@@ -20,7 +20,7 @@ const Confirmation: React.FC<ConfirmationProps> = ({
         isConfirmed ? "" : "hidden"
       }`}
     >
-      <div className="bg-white py-[4rem] px-[2.4rem] w-full rounded-t-[12px] flex flex-col items-center gap-[1.6rem] md:w-[90%] md:rounded-b-[12px] lg:w-[50%] md:p-[4rem]">
+      <div className="bg-white py-[4rem] px-[2.4rem] w-full rounded-t-[12px] flex flex-col items-center gap-[1.6rem] md:w-[90%] md:rounded-b-[12px] lg:w-[50%] md:p-[4rem] max-h-[58rem]">
         <div className="text-left w-full">
           <IoIosCheckmarkCircleOutline className="text-[4.8rem] text-green" />
           <h2 className="text-[4.8rem] font-bold text-rose900 mt-[2.4rem]">
@@ -31,7 +31,7 @@ const Confirmation: React.FC<ConfirmationProps> = ({
           </p>
         </div>
 
-        <div className="w-full bg-rose50 rounded-[8px] p-[2.4rem]">
+        <div className="w-full bg-rose50 rounded-[8px] p-[2.4rem] overflow-y-auto">
           {cart.map(({ product, quantity }) => (
             <div
               className="w-full flex justify-between items-center border-b-[1px] pb-[1.6rem] border-b-rose100"
